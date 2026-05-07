@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="Images/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Kenosi Motors | Feedback</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+      .hero {
+        color: #fff;
+        text-align: center;
+        padding: 4rem 1rem;
+      }
+      .hero-content {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      .feedback-section {
+        background-color: transparent;
+        padding: 4rem 1rem;
+        border: #000000 solid 1px;
+        border-radius: 10px;
+        max-width: 800px;
+        margin: 2rem auto;
+        box-shadow: 0 20px 20px rgb(0, 0, 0);
+        }
+      .section-title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: #ffffff;
+        text-align: center;
+      }
+      .section-description {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        color: #deb7b7;
+      }
+        .feedback-form {
+          max-width: 600px;
+          margin: 0 auto;
+        }
+        .feedback-form .form-label {
+            font-weight: bold;
+            color: #ffffff;
+          }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="Images/Logo.png" alt="Kenosi Motors" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Inventory.html">Inventory</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="AboutUs.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-cta" href="feedback.html" >Enquire Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!--Hero Section-->
+<section class="hero py-2">
+  <div class="container">
+    <span class="eyebrow">Feedback & Enquiries</span>
+    <div class="hero-content">
+      <h1>How Can We Help You?</h1>
+      <p>Whether you're ready to buy or just exploring - fill in the form and we'll be in touch soon!</p>
+    </div>
+  </div>
+</section>
+<section class="feedback-section py-5">
+  <div class="feedback-container">
+    <h2 class="section-title">We Value Your Feedback</h2> 
+    <p class="section-description">Have questions or want to share your experience? Fill out the form below and we'll get back to you as soon as possible.</p>
+    <form class="feedback-form" action="submit_feedback.php" method="POST">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-outline-primary">Submit Feedback</button>
+    </form>
+  </div>
+</section>
+
+    <!--Content-->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="name">Kenosi Motors</div>
+        <div class="tagline">Francistown's Premier Dealership</div>
+        <p>Your trusted partner for new and pre-owned vehicles in Botswana. Quality cars, honest service, real value.</p>
+      </div>
+      <div>
+        <div class="footer-heading">Quick Links</div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="inventory.html">Inventory</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Services</div>
+        <ul class="footer-links">
+          <li><a href="services.html">Test Drives</a></li>
+          <li><a href="services.html">Vehicle Finance</a></li>
+          <li><a href="services.html">Trade-Ins</a></li>
+          <li><a href="services.html">After-Sales</a></li>
+          <li><a href="feedback.html">Make an Enquiry</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Contact Us</div>
+        <ul class="footer-contact">
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+            Plot 4821, Blue jacket Street, Francistown, Botswana
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            +267 395 1234
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            info@kenosimotors.co.bw
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+            Mon – Sat: 8:00am – 6:00pm
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Kenosi Motors. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">in</a>
+        <a href="#" aria-label="WhatsApp">w</a>
+      </div>
+    </div>
+  </div>
+</footer>
+    <script src="Javascript/"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
